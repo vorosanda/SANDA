@@ -6,7 +6,7 @@ function on_touch_start(e)
 {
 	var touches = e.changedTouches;
 	for (var i = 0; i < touches.length; i++){
-		var circle = document.createElementNS("http://www.w3.org/2000/svg2", "circle");
+		var circle = document.createElementNS("http://www.w3.org/2000/svg", "circle");
 		circle.setAttribute("cx", touches[i].pageX);
 		circle.setAttribute("cy", touches[i].pageY);
 		circle.setAttribute("r", 10);
