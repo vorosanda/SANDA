@@ -1,9 +1,41 @@
-
-document.getElementById("id_logic_level_version").innerHTML = "Business level version: 2017.11.01.7"; 
-window.addEventListener('deviceorientation', ondeviceorientation);
+// this is an example for ondevicemotion
+document.getElementById("id_logic_level_version").innerHTML = "Business level version: 2017.11.29.6"; 
+//window.addEventListener('deviceorientation', ondeviceorientation);
 window.addEventListener('devicemotion', ondevicemotion);
 
 
+var unghiuri = {gamma:0, beta:0};
+
+
+setInterval(deseneaza_cerc_canvas, 40, unghiuri);
+
+
+//----------------------------------------
+function deseneaza_cerc_canvas(unghiuri)
+{
+	var canvas = document.getElementById("id_canvas");
+	var context = canvas.getContext("2d");
+ 
+	var w = canvas.getAttribute("width");
+	var h = canvas.getAttribute("height");
+
+	context.clearRect(0, 0, w, h);
+
+	context.strokeRect(0, 0, w, h);
+	
+	context.beginPath();
+	
+	var centru = {x : w / 2, y : h / 2};
+	var raza = 10;
+	var max_deplasare_x = w / 2 - raza;
+	var max_deplasare_y = h / 2 - raza;
+ // gamma == 0 -> centru.x
+ // gamma == -90 -> 0 + raza
+ // gamma == 90 -> w - raza
+	context.arc(centru.x + unghiuri.gamma / 90 * max_deplasare_x, centru.y + unghiuri.beta / 90 * max_deplasare_y, raza, 0, 2 * Math.PI);
+ 
+	context.stroke();
+}
 //----------------------------------------
 function deseneaza_cerc_svg(gamma, beta)
 {
@@ -20,29 +52,6 @@ function deseneaza_cerc_svg(gamma, beta)
 
 	cerc.setAttribute("cx", centru.x + gamma / 90 * max_deplasare_x);
 	cerc.setAttribute("cy", centru.y + beta / 90 * max_deplasare_y);	
-}
-//----------------------------------------
-function deseneaza_cerc_canvas(gamma, beta)
-{
-	var canvas = document.getElementById("id_canvas");
-	var context = canvas.getContext("2d");
- 
-	context.beginPath();
-	var w = canvas.getAttribute("width");
-	var h = canvas.getAttribute("height");
-	
-	context.clearRect(0, 0, w, h);
-	
-	var centru = {x : w / 2, y : h / 2};
-	var raza = 10;
-	var max_deplasare_x = w / 2 - raza;
-	var max_deplasare_y = h / 2 - raza;
- // gamma == 0 -> centru.x
- // gamma == -90 -> 0 + raza
- // gamma == 90 -> w - raza
-	context.arc(centru.x + gamma / 90 * max_deplasare_x, centru.y + beta / 90 * max_deplasare_y, raza, 0, 2 * Math.PI);
- 
-	context.stroke();
 }
 //----------------------------------------
 function deseneaza_patrat_canvas(alpha, gamma, beta)
@@ -87,7 +96,7 @@ function ondeviceorientation(event)
 	
 	//deseneaza_cerc_canvas(gamma, beta);
 	// deseneaza_cerc_svg(gamma, beta);
-	deseneaza_patrat_canvas(alpha, gamma, beta);
+	//deseneaza_patrat_canvas(alpha, gamma, beta);
 }
 //----------------------------------------
 function ondevicemotion(event) 
@@ -95,10 +104,10 @@ function ondevicemotion(event)
 	document.getElementById("id_acc").innerHTML = "Acc = " + Math.round(event.acceleration.x * 10) / 10 + " " + Math.round(event.acceleration.y * 10) / 10 + " " + Math.round(event.acceleration.z * 10) / 10;
 	
 	var ag = event.accelerationIncludingGravity;
-	var gamma = -Math.atan(ag.x / ag.z) * 180 / Math.PI;
-	var beta = Math.atan(ag.y / ag.z) * 180 / Math.PI;
+	unghiuri.gamma = -Math.atan(ag.x / ag.z) * 180 / Math.PI;
+	unghiuri.beta = Math.atan(ag.y / ag.z) * 180 / Math.PI;
 	
-	document.getElementById("id_acc_g").innerHTML = "AccG = " + Math.round(ag.x * 10) / 10 + " " + Math.round(ag.y * 10) / 10 + " " + Math.round(ag.z * 10) / 10 + " gamma = " + Math.round(gamma * 10) / 10 + " beta = " + Math.round(beta * 10) / 10;
+	//document.getElementById("id_acc_g").innerHTML = "AccG = " + Math.round(ag.x * 10) / 10 + " " + Math.round(ag.y * 10) / 10 + " " + Math.round(ag.z * 10) / 10 + " gamma = " + Math.round(gamma * 10) / 10 + " beta = " + Math.round(beta * 10) / 10;
 	//deseneaza_cerc_canvas(gamma, beta);
 }
 //----------------------------------------
