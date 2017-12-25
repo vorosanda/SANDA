@@ -1,0 +1,272 @@
+<html>
+<head>
+
+</head>
+<body>
+<br>
+	 <script language="javaScript">function clockTick() {
+  var currentTime = new Date(),
+      month = currentTime.getMonth() + 1,
+      day = currentTime.getDate(),
+      year = currentTime.getFullYear(),
+      hours = currentTime.getHours(),
+      minutes = currentTime.getMinutes(),
+      seconds = currentTime.getSeconds(),
+      text = (day + "/" + month + "/" + year + ' <br> ' + hours + ':' + minutes + ':' + seconds);
+  // here we get the element with the id of "date" and change the content to the text variable we made above
+  document.getElementById('date').innerHTML = text;
+}
+
+// here we run the clockTick function every 1000ms (1 second)
+setInterval(clockTick, 1000);
+</script>
+<span id="date"></span>
+
+<p align="center"><font face="Algerian" size="4" color="#FFFFFF"><span id="liveclock"
+style="position:absolute;left:0;top:0;"></span></font></p>
+<p align="center"><font face="Bookman Old Style" size="6" color="#000000">EVALUAREA CON&#354;INUTULUI PARCURS </font></p>
+<p align="right"><font face="Algerian" size="4" color="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+<p align="center"><font color="#000000" size="3" face="Bookman Old Style"><b>1.In ce an a fost  inventata prima bicicleta?</b></font></p>
+
+<form name="butoane1" method="POST">
+  <p align="center"><font color="#000000" size="3" face="Bookman Old Style">
+    <input type="checkbox" name="C1_1" value="ON">
+    1800</font></p>
+  <p align="center"><font color="#000000" size="3" face="Bookman Old Style">
+    <input type="checkbox" name="C1_2" value="ON">
+    1817</font></p>
+  <p align="center"><font color="#000000" size="3" face="Bookman Old Style">
+    <input type="checkbox" name="C1_3" value="ON">
+   1830</font></p>
+</form>
+
+<p align="center"><font color="#000000" size="3" face="Bookman Old Style"><b>2. In ce ani bicicletele de lemn au fost modificate, fiind  construite  in totalitate  din metal?</b></font></p>
+
+<form name="butoane2" method="POST">
+  <p align="center"><font color="#000000" size="3" face="Bookman Old Style">
+    <input type="checkbox" name="C2_1" value="ON">
+  1870-1890</font></p>
+  <p align="center"><font color="#000000" size="3" face="Bookman Old Style">
+    <input type="checkbox" name="C2_2" value="ON">
+ 1800-1817</font></p>
+  <p align="center"><font color="#000000" size="3" face="Bookman Old Style">
+    <input type="checkbox" name="C2_3" value="ON">
+  1899-2000</font></p>
+</form>
+
+<p align="center"><font color="#000000" size="3" face="Bookman Old Style"><b>3. Care este caracteristica de baza care  influienteaza alegerea  unei  biciclete?</b></font></p>
+
+<form name="butoane3" method="POST">
+  <p align="center"><font color="#000000" size="3" face="Bookman Old Style">
+    <input type="checkbox" name="C3_1" value="ON">
+    Costul</font></p>
+  <p align="center"><font color="#000000" size="3" face="Bookman Old Style">
+    <input type="checkbox" name="C3_2" value="ON">
+    Scopul</font></p>
+  <p align="center"><font color="#000000" size="3" face="Bookman Old Style">
+    <input type="checkbox" name="C3_3" value="ON">
+    Dimensiunea  cadrelor</font></p>
+</form>
+
+<p align="center"><font color="#000000" size="3" face="Bookman Old Style"><b>4. Care  sunt tipurile de biciclete?</b></font></p>
+
+<form name="butoane4" method="POST">
+  <p align="center"><font color="#000000" size="3" face="Bookman Old Style">
+    <input type="checkbox" name="C4_1" value="ON">
+    De munte, de oras, de trekking</font></p>
+  <p align="center"><font color="#000000" size="3" face="Bookman Old Style">
+    <input type="checkbox" name="C4_2" value="ON">
+    de campie si de munte</font></p>
+  <p align="center"><font color="#000000" size="3" face="Bookman Old Style">
+    <input type="checkbox" name="C4_3" value="ON">
+    de oras si de deal</font></p>
+</form>
+
+<p align="center"><font color="#000000" size="3" face="Bookman Old Style"><b>5.Pentru care tip de bicicleta, furca cu amortizor este obligatorie?</b></font></p>
+
+<form name="butoane5" method="POST">
+  <p align="center"><font color="#000000" size="3" face="Bookman Old Style">
+    <input type="checkbox" name="C5_1" value="ON">
+    Bicicleta de munte</font></p>
+  <p align="center"><font color="#000000" size="3" face="Bookman Old Style">
+    <input type="checkbox" name="C5_2" value="ON">
+    Bicicleta de oras</font></p>
+  <p align="center"><font color="#000000" size="3" face="Bookman Old Style">
+    <input type="checkbox" name="C5_3" value="ON">
+   Bicicleta Trekking</font></p>
+</form>
+
+<p align="center"><font color="#000000" size="3" face="Bookman Old Style"><b>6. La  ce  tip de bicicleta  anvelopele sunt subtiri?</b></font></p>
+
+<form name="butoane6" method="POST">
+  <p align="center"><font color="#000000" size="3" face="Bookman Old Style">
+    <input type="checkbox" name="C6_1" value="ON">
+    Bicicletele de oras</font></p>
+  <p align="center"><font color="#000000" size="3" face="Bookman Old Style">
+    <input type="checkbox" name="C6_2" value="ON">
+    Bicicletele de munte</font></p>
+  <p align="center"><font color="#000000" size="3" face="Bookman Old Style">
+    <input type="checkbox" name="C6_3" value="ON">
+    Bicicletele Trekking</font></p>
+</form>
+
+<p align="center"><font color="#000000" size="3" face="Bookman Old Style"><b>7. Ce  combinatie  reprezinta BICICLETA DE TREKKING ?</b></font></p>
+
+<form name="butoane7" method="POST">
+  <p align="center"><font color="#000000" size="3" face="Bookman Old Style">
+    <input type="checkbox" name="C7_1" value="ON">
+    Dintre bicicletele de munte</font></p>
+  <p align="center"><font color="#000000" size="3" face="Bookman Old Style">
+    <input type="checkbox" name="C7_2" value="ON">
+    Dinte bicicletele de munte si  oras</font></p>
+  <p align="center"><font color="#000000" size="3" face="Bookman Old Style">
+    <input type="checkbox" name="C7_3" value="ON">
+    Dinte bicicletele de oras</font></p>
+</form>
+
+<p align="center"><font color="#000000" size="3" face="Bookman Old Style"><b>8. Cum  este  definita  o  bicicleta?</b></font></p>
+
+<form name="butoane8" method="POST">
+  <p align="center"><font color="#000000" size="3" face="Bookman Old Style">
+    <input type="checkbox" name="C8_1" value="ON">
+  Un  vehicul rutier</font></p>
+  <p align="center"><font color="#000000" size="3" face="Bookman Old Style">
+    <input type="checkbox" name="C8_2" value="ON">
+  Un obiect cu doua roti</font></p>
+  <p align="center"><font color="#000000" size="3" face="Bookman Old Style">
+    <input type="checkbox" name="C8_3" value="ON">
+  Un vehicul rutier cu doua  roti  asezate in linie  una  in  spatele  celeilalte.</font></p>
+</form>
+
+<p align="center"><font color="#000000" size="3" face="Bookman Old Style"><b>9. Alegerea traseului are influienta in  alegerea  bicicletei?</b></font></p>
+
+<form name="butoane9" method="POST">
+  <p align="center"><font color="#000000" size="3" face="Bookman Old Style">
+    <input type="checkbox" name="C9_1" value="ON">
+    Nu</font></p>
+  <p align="center"><font color="#000000" size="3" face="Bookman Old Style">
+    <input type="checkbox" name="C9_2" value="ON">
+    Da</font></p>
+  <p align="center"><font color="#000000" size="3" face="Bookman Old Style">
+    <input type="checkbox" name="C9_3" value="ON">
+   Niciodata</font></p>
+</form>
+
+<p>&nbsp;</p>
+
+<form name="the_form">
+  <p align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <input type="button" name="B2" value=" "></p>
+</form>
+
+<div align="left">
+    <script language="JavaScript">
+
+<!-- hide me
+
+function scrienota(){
+var nota=1;
+var is_checked1_1 = window.document.butoane1.C1_1.checked;
+var is_checked1_2 = window.document.butoane1.C1_2.checked;
+var is_checked1_3 = window.document.butoane1.C1_3.checked;
+
+var is_checked2_1 = window.document.butoane2.C2_1.checked;
+var is_checked2_2 = window.document.butoane2.C2_2.checked;
+var is_checked2_3 = window.document.butoane2.C2_3.checked;
+
+var is_checked3_1 = window.document.butoane3.C3_1.checked;
+var is_checked3_2 = window.document.butoane3.C3_2.checked;
+var is_checked3_3 = window.document.butoane3.C3_3.checked;
+
+var is_checked4_1 = window.document.butoane4.C4_1.checked;
+var is_checked4_2 = window.document.butoane4.C4_2.checked;
+var is_checked4_3 = window.document.butoane4.C4_3.checked;
+
+var is_checked5_1 = window.document.butoane5.C5_1.checked;
+var is_checked5_2 = window.document.butoane5.C5_2.checked;
+var is_checked5_3 = window.document.butoane5.C5_3.checked;
+
+var is_checked6_1 = window.document.butoane6.C6_1.checked;
+var is_checked6_2 = window.document.butoane6.C6_2.checked;
+var is_checked6_3 = window.document.butoane6.C6_3.checked;
+
+var is_checked7_1 = window.document.butoane7.C7_1.checked;
+var is_checked7_2 = window.document.butoane7.C7_2.checked;
+var is_checked7_3 = window.document.butoane7.C7_3.checked;
+
+var is_checked8_1 = window.document.butoane8.C8_1.checked;
+var is_checked8_2 = window.document.butoane8.C8_2.checked;
+var is_checked8_3 = window.document.butoane8.C8_3.checked;
+
+var is_checked9_1 = window.document.butoane9.C9_1.checked;
+var is_checked9_2 = window.document.butoane9.C9_2.checked;
+var is_checked9_3 = window.document.butoane9.C9_3.checked;
+
+ if (is_checked1_1 == false)
+	 if (is_checked1_2 == true)  
+		if (is_checked1_3 == false) 
+			{ nota=nota+1;}
+
+if (is_checked2_1 == true) 
+	 if (is_checked2_2 == false) 
+		 if (is_checked2_3 == false) 
+			{ nota=nota+1;}
+
+if (is_checked3_1 == false) 
+	 if (is_checked3_2 == false) 
+		 if (is_checked3_3 == true) 
+			{ nota=nota+1;}
+
+if (is_checked4_1 == true) 
+	 if (is_checked4_2 == false) 
+		 if (is_checked4_3 == false) 
+			{ nota=nota+1;}
+
+if (is_checked5_1 == true) 
+	 if (is_checked5_2 == false) 
+		 if (is_checked5_3 == false) 
+			{ nota=nota+1;}
+
+if (is_checked6_1 == true) 
+	 if (is_checked6_2 == false) 
+		if (is_checked6_3 == true) 
+			{ nota=nota+1;}
+
+if (is_checked7_1 == false) 
+	 if (is_checked7_2 == true) 
+		 if (is_checked7_3 == false) 
+			{ nota=nota+1;}
+
+if (is_checked8_1 == false) 
+	 if (is_checked8_2 ==false) 
+		 if (is_checked8_3 == true) 
+			{ nota=nota+1;}
+
+if (is_checked9_1 == false) 
+	 if (is_checked9_2 == true) 
+		 if (is_checked9_3 == false) 
+			{ nota=nota+1;}
+;
+
+window.document.the_form.B2.value = 'Nota este:'+nota;
+window.document.notare.B1.disabled="false";
+}
+show me -->
+  </script>
+    
+    
+  <form name="notare" method="POST">
+  <p align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+    <input onClick="scrienota()" type="button" name="B1" value="Verifica">
+  </p>
+</form>
+<!--#echo banner=""-->
+</body>
+</html>
+
+
+
+
+
+
+
