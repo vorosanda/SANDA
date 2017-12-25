@@ -3,6 +3,21 @@
 <title>Informatică</title>
 
 <body>
+ <script language="javaScript">function clockTick() {
+  var currentTime = new Date(),
+      month = currentTime.getMonth() + 1,
+      day = currentTime.getDate(),
+      year = currentTime.getFullYear(),
+      hours = currentTime.getHours(),
+      minutes = currentTime.getMinutes(),
+      seconds = currentTime.getSeconds(),
+      text = (day + "/" + month + "/" + year + ' <br> ' + hours + ':' + minutes + ':' + seconds);
+  document.getElementById('date').innerHTML = text;
+}
+
+setInterval(clockTick, 1000);
+</script>
+<span id="date"></span>
 <br>
  
  <script type = "text/javascript">
@@ -303,7 +318,7 @@ alert("Scorul tau este "+k+" puncte din 10");
 <td width="795" bgcolor="white">
 <center>
 
-<h1 align="center">Evaluare</h1>
+<h1 align="center">Evaluare HTML</h1>
 <br>
 <div id = "one" class = "unhidden">
 <form name = "first"  >
@@ -435,26 +450,11 @@ display:block;
  
 
       </dl>
+	  <br> <br> <br> <br> <br>
      
+     <center><a href="https://www.w3schools.com/html/">HTML Tutorial</a></center>
 
-
-	 <script language="javaScript">function clockTick() {
-  var currentTime = new Date(),
-      month = currentTime.getMonth() + 1,
-      day = currentTime.getDate(),
-      year = currentTime.getFullYear(),
-      hours = currentTime.getHours(),
-      minutes = currentTime.getMinutes(),
-      seconds = currentTime.getSeconds(),
-      text = (day + "/" + month + "/" + year + ' <br> ' + hours + ':' + minutes + ':' + seconds);
-  // here we get the element with the id of "date" and change the content to the text variable we made above
-  document.getElementById('date').innerHTML = text;
-}
-
-// here we run the clockTick function every 1000ms (1 second)
-setInterval(clockTick, 1000);
-</script>
-<span id="date"></span></td></tr>
+	</td></tr>
   </table>
   
 </form>
