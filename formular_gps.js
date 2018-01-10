@@ -1,4 +1,4 @@
-document.getElementById("id_business_level_version").innerHTML = "Business level version: 2018.01.11.0"; 
+document.getElementById("id_business_level_version").innerHTML = "Business level version: 2017.12.10.0"; 
 
 
 navigator.geolocation.watchPosition(on_gps_success, on_gps_error);
