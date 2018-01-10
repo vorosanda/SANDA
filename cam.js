@@ -1,4 +1,4 @@
-ar d = new Date();
+var d = new Date();
 
 document.getElementById("id_business_level_version").innerHTML = 
 		"Business level version:" + 
