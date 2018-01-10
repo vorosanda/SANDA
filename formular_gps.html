@@ -1,0 +1,136 @@
+<html>
+<head>
+<title>Informatica</title>
+</head>
+<body>
+ <script language="javaScript">function clockTick() {
+  var currentTime = new Date(),
+      month = currentTime.getMonth() + 1,
+      day = currentTime.getDate(),
+      year = currentTime.getFullYear(),
+      hours = currentTime.getHours(),
+      minutes = currentTime.getMinutes(),
+      seconds = currentTime.getSeconds(),
+      text = (day + "/" + month + "/" + year + ' <br> ' + hours + ':' + minutes + ':' + seconds);
+  document.getElementById('date').innerHTML = text;
+}
+setInterval(clockTick, 1000);
+</script>
+<span id="date"></span>
+<center>
+<table border="0" id="table1">
+	<tr>
+		<td>
+		<center>
+			<table border="0"><form method="post" action="vorosanda@yahoo.com">
+				<tr>
+					<td>
+					<h1 style="font-family:verdana; color:#32cd32;padding-top:5px">Opinia dumneavoastra conteaza</h1>
+					</td>
+				</tr>
+				<tr>
+					<td><center>
+						<input type="text" placeholder="Nume" class="input"></center>
+					</td>
+				</tr>
+				<tr>
+					<td><center>
+						<input type="text" placeholder="Prenume" class="input"></center>
+					</td>
+				</tr>
+				<tr>
+					<td><center>
+						<input type="text" placeholder="E-mail/Telefon" class="input"></center>
+					</td>
+				</tr>
+				<tr>
+					<td><center>
+						<textarea  placeholder="Comentarii..."></textarea></center>
+					</td>
+				</tr>
+				<tr>
+					<td><center>
+						<input type="reset" value="Resetati informatiile" class="button"></center>
+					</td>
+				</tr>
+				<tr>
+					<td><center>
+						<h2 style="font-family:verdana; color:#32cd32;padding-top:5px;">Ati gasit informatiile necesare?</h2></center>
+					</td>
+				</tr>
+				<tr>
+					<td><center>
+						<input type="checkbox" style="margin-left:-100px;">     DA</center>
+					</td>
+					<td><center>
+						<input type="checkbox" style="margin-left:-500px;">     NU</center>
+					</td>
+				</tr>
+				<tr>
+					<td><center>
+						<input type="submit" value="Trimite informatiile" class="button" onclick="ale( )"></center></form>
+					<br></td>
+				</tr>
+			</table>
+		</center>
+		</td>
+	</tr><br><br>
+	<tr>
+					<td><center>
+ 
+ <audio controls>
+	<source src="Enya.mp3" type="audio/mpeg"></audio>
+ </center></td>
+	</tr>
+	<tr>
+					<td><center>
+					<p>UI version: 2018.01.11.0</p>
+<p id = "id_business_level_version"></p>
+
+
+<p id = "id_p"></p>
+
+<div id = "id_map"  style = "height: 100%;"></div>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA1GsOCvClXYlsZBWA7UZ0CJ0XLaFrXroQ"
+    async defer></script>
+
+<script src = "gps2.js" defer></script>
+	</tr>		
+</table>
+</center>
+<script>
+function ale( ){
+alert("Sunteti sigur ca trimiteti informatiile?");
+}
+</script>
+</body>
+</body>
+</html>
+			
+				
+				
+				
+						
+						
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
